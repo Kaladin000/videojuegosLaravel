@@ -30,7 +30,7 @@ class StoreVideojuegoRequest extends FormRequest
             'subgenero' => 'required|string',
             'mes' => 'required|integer|min:1|max:12',
             'año' => 'required|integer',
-            'nombre_desarrollador' => 'required|string',
+            'desarrollador_id' => 'required',
             'editor_id' => 'required|exists:editors,id'
         ];
     }
