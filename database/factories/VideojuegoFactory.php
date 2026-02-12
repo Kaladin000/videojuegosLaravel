@@ -27,7 +27,7 @@ class VideojuegoFactory extends Factory
             "mes"=>$this->faker->month(),
             "año"=>$this->faker->year(),
             "editor_id"=>Editor::factory()->create(),
-            "nombre_desarrollador"=>Desarrollador::factory()->create()->id
+            "nombre_desarrollador"=>Desarrollador::factory()
         ];
     }
 }
