@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('subgenero')->nullable();
             $table->integer('mes');
             $table->integer('año');
+            $table->foreignId('desarrollador_id')->constrained();
             $table->foreignId('editor_id')->constrained();
             $table->timestamps();
         });
