@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('desarrolladors', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre_desarrollador', 50);
+            $table->string('nombre_desarrollador', 50)->unique();
             $table->timestamps();
         });
     }
