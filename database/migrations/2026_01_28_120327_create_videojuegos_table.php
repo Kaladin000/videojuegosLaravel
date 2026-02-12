@@ -20,8 +20,6 @@ return new class extends Migration
             $table->string('subgenero')->nullable();
             $table->integer('mes');
             $table->integer('año');
-            $table->string('nombre_desarrollador');
-            $table->foreign('nombre_desarrollador')->references('nombre_desarrollador')->on('desarrolladors');
             $table->foreignId('editor_id')->constrained();
             $table->timestamps();
         });
