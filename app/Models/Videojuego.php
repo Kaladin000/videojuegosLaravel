@@ -21,7 +21,7 @@ class Videojuego extends Model
         'subgenero',
         'mes',
         'año',
-        'nombre_desarrollador',
+        'desarrollador_id',
         'editor_id'
     ];
 
