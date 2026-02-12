@@ -39,7 +39,7 @@ class VideojuegoController extends Controller
         $videojuego->subgenero = $request->subgenero;
         $videojuego->mes = $request->mes;
         $videojuego->año = $request->año;
-        $videojuego->nombre_desarrollador = $request->desarrollador_id;
+        $videojuego->desarrollador_id = $request->desarrollador_id;
         $videojuego->editor_id = $request->editor_id;
 
         $videojuego->save();
