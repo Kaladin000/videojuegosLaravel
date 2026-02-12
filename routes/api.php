@@ -35,5 +35,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/videojuego', [VideojuegoController::class, 'index']);
     Route::post('videojuego', [VideojuegoController::class, 'store']);
     Route::get('/videojuego/{videojuego}', [VideojuegoController::class, 'show']);
+    Route::put('videojuego/{videojuego}', [VideojuegoController::class, 'update']);
+    Route::delete('videojuego/{videojuego}', [VideojuegoController::class, 'destroy']);
 });
 
