@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('videojuegos', function (Blueprint $table) {
             $table->id();
             $table->string('titulo')->unique();
-            $table->string('descripcion');
+            $table->text('descripcion');
             $table->integer('numero')->nullable()->default(0);
             $table->string('genero');
             $table->string('subgenero')->nullable();
