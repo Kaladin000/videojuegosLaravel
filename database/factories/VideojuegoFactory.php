@@ -26,8 +26,8 @@ class VideojuegoFactory extends Factory
             "subgenero"=>$this ->faker->randomElement(['Hack n Slash','Looter shooter','Roguelike','RTS','MOBA','Novela visual','Plataformas 2D','Plataformas 3D']),
             "mes"=>$this->faker->month(),
             "año"=>$this->faker->year(),
-            "editor_id"=>Editor::factory()->create(),
-            "desarrollador_id"=>Desarrollador::factory()->create()
+            "editor_id"=>Editor::factory()->create()->id,
+            "desarrollador_id"=>Desarrollador::factory()->create()->id
         ];
     }
 }
