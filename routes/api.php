@@ -19,6 +19,7 @@ Route::post('desarrollador', [DesarrolladorController::class, 'store']);
 Route::put('desarrollador/{desarrollador}', [DesarrolladorController::class, 'update']);
 
 Route::delete('desarrollador/{desarrollador}', [DesarrolladorController::class, 'destroy']);
+Route::delete('videojuego/{videojuego}', [VideojuegoController::class, 'destroy']);
 
 Route::apiResource('perfil', PerfilController::class);
 
@@ -36,6 +37,5 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('videojuego', [VideojuegoController::class, 'store']);
     Route::get('/videojuego/{videojuego}', [VideojuegoController::class, 'show']);
     Route::put('videojuego/{videojuego}', [VideojuegoController::class, 'update']);
-    Route::delete('videojuego/{videojuego}', [VideojuegoController::class, 'destroy']);
 });
 
